@@ -15,12 +15,11 @@ return new class extends Migration
     {
         Schema::create('product_items', function (Blueprint $table) {
             $table->id();
-            $table->integer('product_id');
+            $table->foreignId('product_id');
             $table->integer('sku');
             $table->integer('quantity_in_stock');
             $table->string('product_image');
             $table->double('price');
-            $table->timestamps();
         });
     }
 

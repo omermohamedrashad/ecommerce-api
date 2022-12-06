@@ -15,9 +15,8 @@ return new class extends Migration
     {
         Schema::create('promotion_codes', function (Blueprint $table) {
             $table->id();
-            $table->integer('promotion_id');
+            $table->foreignId('promotion_id');
             $table->string('code');
-            $table->timestamps();
         });
     }
 

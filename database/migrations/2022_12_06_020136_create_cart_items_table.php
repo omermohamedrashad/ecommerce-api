@@ -15,10 +15,9 @@ return new class extends Migration
     {
         Schema::create('cart_items', function (Blueprint $table) {
             $table->id();
-            $table->integer('cart_id');
-            $table->integer('product_item_id');
+            $table->foreignId('cart_id');
+            $table->foreignId('product_item_id');
             $table->integer('quantity');
-            $table->timestamps();
         });
     }
 

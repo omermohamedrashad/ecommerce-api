@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('city');
             $table->string('region');
             $table->string('postal_code');
-            $table->integer('country_id');
+            $table->foreignId('country_id');
             $table->timestamps();
         });
     }

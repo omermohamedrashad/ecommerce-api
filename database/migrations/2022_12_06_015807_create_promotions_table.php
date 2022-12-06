@@ -20,7 +20,6 @@ return new class extends Migration
             $table->double('discount_rate');
             $table->dateTime('start_date');
             $table->dateTime('end_date');
-            $table->timestamps();
         });
     }
 

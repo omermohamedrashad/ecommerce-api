@@ -15,15 +15,13 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
-            $table->integer('payment_method_id');
-            $table->integer('user_address_id');
-            $table->integer('shipping_method_id');
-            $table->integer('order_status_id');
+            $table->foreignId('user_id');
+            $table->foreignId('payment_method_id');
+            $table->foreignId('user_address_id');
+            $table->foreignId('shipping_method_id');
+            $table->foreignId('order_status_id');
             $table->integer('order_total');
             $table->dateTime('order_date');
-
-            $table->timestamps();
         });
     }
 

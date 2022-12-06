@@ -15,9 +15,8 @@ return new class extends Migration
     {
         Schema::create('product_variations', function (Blueprint $table) {
             $table->id();
-            $table->integer('product_category_id');
+            $table->foreignId('product_category_id');
             $table->string('name');
-            $table->timestamps();
         });
     }
 

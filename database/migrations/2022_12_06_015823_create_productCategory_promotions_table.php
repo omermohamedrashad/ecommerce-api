@@ -14,10 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('productCategory_promotions', function (Blueprint $table) {
-            $table->id();
-            $table->integer('product_category_id');
-            $table->integer('promotion_id');
-            $table->timestamps();
+            $table->foreignId('product_category_id');
+            $table->foreignId('promotion_id');
         });
     }
 

@@ -15,13 +15,11 @@ return new class extends Migration
     {
         Schema::create('user_reviews', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
-            $table->integer('order_line_id');
+            $table->foreignId('user_id');
+            $table->foreignId('order_line_id');
             $table->integer('rating_value');
             $table->text('comment');
             $table->boolean('is_helpful');
-
-            $table->timestamps();
         });
     }
 
