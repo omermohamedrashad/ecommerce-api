@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StorepromotionRequest;
-use App\Http\Requests\UpdatepromotionRequest;
-use App\Models\promotion;
+use App\Http\Requests\StorePromotionRequest;
+use App\Http\Requests\UpdatePromotionRequest;
+use App\Models\Promotion;
 
 class PromotionController extends Controller
 {
@@ -31,10 +31,10 @@ class PromotionController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StorepromotionRequest  $request
+     * @param  \App\Http\Requests\StorePromotionRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorepromotionRequest $request)
+    public function store(StorePromotionRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class PromotionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\promotion  $promotion
+     * @param  \App\Models\Promotion  $promotion
      * @return \Illuminate\Http\Response
      */
-    public function show(promotion $promotion)
+    public function show(Promotion $promotion)
     {
         //
     }
@@ -53,10 +53,10 @@ class PromotionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\promotion  $promotion
+     * @param  \App\Models\Promotion  $promotion
      * @return \Illuminate\Http\Response
      */
-    public function edit(promotion $promotion)
+    public function edit(Promotion $promotion)
     {
         //
     }
@@ -64,11 +64,11 @@ class PromotionController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatepromotionRequest  $request
-     * @param  \App\Models\promotion  $promotion
+     * @param  \App\Http\Requests\UpdatePromotionRequest  $request
+     * @param  \App\Models\Promotion  $promotion
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatepromotionRequest $request, promotion $promotion)
+    public function update(UpdatePromotionRequest $request, Promotion $promotion)
     {
         //
     }
@@ -76,10 +76,10 @@ class PromotionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\promotion  $promotion
+     * @param  \App\Models\Promotion  $promotion
      * @return \Illuminate\Http\Response
      */
-    public function destroy(promotion $promotion)
+    public function destroy(Promotion $promotion)
     {
         //
     }

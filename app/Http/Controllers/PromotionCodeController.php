@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Storepromotion_codeRequest;
-use App\Http\Requests\Updatepromotion_codeRequest;
-use App\Models\promotion_code;
+use App\Http\Requests\StorePromotionCodeRequest;
+use App\Http\Requests\UpdatePromotionCodeRequest;
+use App\Models\PromotionCode;
 
 class PromotionCodeController extends Controller
 {
@@ -31,10 +31,10 @@ class PromotionCodeController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\Storepromotion_codeRequest  $request
+     * @param  \App\Http\Requests\StorePromotionCodeRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Storepromotion_codeRequest $request)
+    public function store(StorePromotionCodeRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class PromotionCodeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\promotion_code  $promotion_code
+     * @param  \App\Models\PromotionCode  $promotion_code
      * @return \Illuminate\Http\Response
      */
-    public function show(promotion_code $promotion_code)
+    public function show(PromotionCode $promotion_code)
     {
         //
     }
@@ -53,10 +53,10 @@ class PromotionCodeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\promotion_code  $promotion_code
+     * @param  \App\Models\PromotionCode  $promotion_code
      * @return \Illuminate\Http\Response
      */
-    public function edit(promotion_code $promotion_code)
+    public function edit(PromotionCode $promotion_code)
     {
         //
     }
@@ -64,11 +64,11 @@ class PromotionCodeController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\Updatepromotion_codeRequest  $request
-     * @param  \App\Models\promotion_code  $promotion_code
+     * @param  \App\Http\Requests\UpdatePromotionCodeRequest  $request
+     * @param  \App\Models\PromotionCode  $promotion_code
      * @return \Illuminate\Http\Response
      */
-    public function update(Updatepromotion_codeRequest $request, promotion_code $promotion_code)
+    public function update(UpdatePromotionCodeRequest $request, PromotionCode $promotion_code)
     {
         //
     }
@@ -76,10 +76,10 @@ class PromotionCodeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\promotion_code  $promotion_code
+     * @param  \App\Models\PromotionCode  $promotion_code
      * @return \Illuminate\Http\Response
      */
-    public function destroy(promotion_code $promotion_code)
+    public function destroy(PromotionCode $promotion_code)
     {
         //
     }

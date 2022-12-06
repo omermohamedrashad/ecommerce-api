@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\payment_method;
+use App\Models\PaymentMethod;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class PaymentMethodPolicy
@@ -25,10 +25,10 @@ class PaymentMethodPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\payment_method  $paymentMethod
+     * @param  \App\Models\PaymentMethod  $paymentMethod
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, payment_method $paymentMethod)
+    public function view(User $user, PaymentMethod $paymentMethod)
     {
         //
     }
@@ -48,10 +48,10 @@ class PaymentMethodPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\payment_method  $paymentMethod
+     * @param  \App\Models\PaymentMethod  $paymentMethod
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, payment_method $paymentMethod)
+    public function update(User $user, PaymentMethod $paymentMethod)
     {
         //
     }
@@ -60,10 +60,10 @@ class PaymentMethodPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\payment_method  $paymentMethod
+     * @param  \App\Models\PaymentMethod  $paymentMethod
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, payment_method $paymentMethod)
+    public function delete(User $user, PaymentMethod $paymentMethod)
     {
         //
     }
@@ -72,10 +72,10 @@ class PaymentMethodPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\payment_method  $paymentMethod
+     * @param  \App\Models\PaymentMethod  $paymentMethod
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, payment_method $paymentMethod)
+    public function restore(User $user, PaymentMethod $paymentMethod)
     {
         //
     }
@@ -84,10 +84,10 @@ class PaymentMethodPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\payment_method  $paymentMethod
+     * @param  \App\Models\PaymentMethod  $paymentMethod
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, payment_method $paymentMethod)
+    public function forceDelete(User $user, PaymentMethod $paymentMethod)
     {
         //
     }

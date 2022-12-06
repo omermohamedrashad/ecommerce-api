@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\product_item;
+use App\Models\ProductItem;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class ProductItemPolicy
@@ -25,10 +25,10 @@ class ProductItemPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\product_item  $productItem
+     * @param  \App\Models\ProductItem  $productItem
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, product_item $productItem)
+    public function view(User $user, ProductItem $productItem)
     {
         //
     }
@@ -48,10 +48,10 @@ class ProductItemPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\product_item  $productItem
+     * @param  \App\Models\ProductItem  $productItem
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, product_item $productItem)
+    public function update(User $user, ProductItem $productItem)
     {
         //
     }
@@ -60,10 +60,10 @@ class ProductItemPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\product_item  $productItem
+     * @param  \App\Models\ProductItem  $productItem
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, product_item $productItem)
+    public function delete(User $user, ProductItem $productItem)
     {
         //
     }
@@ -72,10 +72,10 @@ class ProductItemPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\product_item  $productItem
+     * @param  \App\Models\ProductItem  $productItem
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, product_item $productItem)
+    public function restore(User $user, ProductItem $productItem)
     {
         //
     }
@@ -84,10 +84,10 @@ class ProductItemPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\product_item  $productItem
+     * @param  \App\Models\ProductItem  $productItem
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, product_item $productItem)
+    public function forceDelete(User $user, ProductItem $productItem)
     {
         //
     }

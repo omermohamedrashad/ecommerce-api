@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\product_variation;
+use App\Models\ProductVariation;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class ProductVariationPolicy
@@ -25,10 +25,10 @@ class ProductVariationPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\product_variation  $productVariation
+     * @param  \App\Models\ProductVariation  $productVariation
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, product_variation $productVariation)
+    public function view(User $user, ProductVariation $productVariation)
     {
         //
     }
@@ -48,10 +48,10 @@ class ProductVariationPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\product_variation  $productVariation
+     * @param  \App\Models\ProductVariation  $productVariation
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, product_variation $productVariation)
+    public function update(User $user, ProductVariation $productVariation)
     {
         //
     }
@@ -60,10 +60,10 @@ class ProductVariationPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\product_variation  $productVariation
+     * @param  \App\Models\ProductVariation  $productVariation
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, product_variation $productVariation)
+    public function delete(User $user, ProductVariation $productVariation)
     {
         //
     }
@@ -72,10 +72,10 @@ class ProductVariationPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\product_variation  $productVariation
+     * @param  \App\Models\ProductVariation  $productVariation
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, product_variation $productVariation)
+    public function restore(User $user, ProductVariation $productVariation)
     {
         //
     }
@@ -84,10 +84,10 @@ class ProductVariationPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\product_variation  $productVariation
+     * @param  \App\Models\ProductVariation  $productVariation
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, product_variation $productVariation)
+    public function forceDelete(User $user, ProductVariation $productVariation)
     {
         //
     }

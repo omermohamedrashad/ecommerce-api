@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Storeorder_statusRequest;
-use App\Http\Requests\Updateorder_statusRequest;
-use App\Models\order_status;
+use App\Http\Requests\StoreOrderStatusRequest;
+use App\Http\Requests\UpdateOrderStatusRequest;
+use App\Models\OrderStatus;
 
 class OrderStatusController extends Controller
 {
@@ -31,10 +31,10 @@ class OrderStatusController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\Storeorder_statusRequest  $request
+     * @param  \App\Http\Requests\StoreOrderStatusRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Storeorder_statusRequest $request)
+    public function store(StoreOrderStatusRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class OrderStatusController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\order_status  $order_status
+     * @param  \App\Models\OrderStatus  $order_status
      * @return \Illuminate\Http\Response
      */
-    public function show(order_status $order_status)
+    public function show(OrderStatus $order_status)
     {
         //
     }
@@ -53,10 +53,10 @@ class OrderStatusController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\order_status  $order_status
+     * @param  \App\Models\OrderStatus  $order_status
      * @return \Illuminate\Http\Response
      */
-    public function edit(order_status $order_status)
+    public function edit(OrderStatus $order_status)
     {
         //
     }
@@ -64,11 +64,11 @@ class OrderStatusController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\Updateorder_statusRequest  $request
-     * @param  \App\Models\order_status  $order_status
+     * @param  \App\Http\Requests\UpdateOrderStatusRequest  $request
+     * @param  \App\Models\OrderStatus  $order_status
      * @return \Illuminate\Http\Response
      */
-    public function update(Updateorder_statusRequest $request, order_status $order_status)
+    public function update(UpdateOrderStatusRequest $request, OrderStatus $order_status)
     {
         //
     }
@@ -76,10 +76,10 @@ class OrderStatusController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\order_status  $order_status
+     * @param  \App\Models\OrderStatus  $order_status
      * @return \Illuminate\Http\Response
      */
-    public function destroy(order_status $order_status)
+    public function destroy(OrderStatus $order_status)
     {
         //
     }

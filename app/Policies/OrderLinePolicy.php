@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\order_line;
+use App\Models\OrderLine;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class OrderLinePolicy
@@ -25,10 +25,10 @@ class OrderLinePolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order_line  $orderLine
+     * @param  \App\Models\OrderLine  $orderLine
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, order_line $orderLine)
+    public function view(User $user, OrderLine $orderLine)
     {
         //
     }
@@ -48,10 +48,10 @@ class OrderLinePolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order_line  $orderLine
+     * @param  \App\Models\OrderLine  $orderLine
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, order_line $orderLine)
+    public function update(User $user, OrderLine $orderLine)
     {
         //
     }
@@ -60,10 +60,10 @@ class OrderLinePolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order_line  $orderLine
+     * @param  \App\Models\OrderLine  $orderLine
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, order_line $orderLine)
+    public function delete(User $user, OrderLine $orderLine)
     {
         //
     }
@@ -72,10 +72,10 @@ class OrderLinePolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order_line  $orderLine
+     * @param  \App\Models\OrderLine  $orderLine
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, order_line $orderLine)
+    public function restore(User $user, OrderLine $orderLine)
     {
         //
     }
@@ -84,10 +84,10 @@ class OrderLinePolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order_line  $orderLine
+     * @param  \App\Models\OrderLine  $orderLine
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, order_line $orderLine)
+    public function forceDelete(User $user, OrderLine $orderLine)
     {
         //
     }

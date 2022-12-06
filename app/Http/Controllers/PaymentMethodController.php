@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Storepayment_methodRequest;
-use App\Http\Requests\Updatepayment_methodRequest;
-use App\Models\payment_method;
+use App\Http\Requests\StorePaymentMethodRequest;
+use App\Http\Requests\UpdatePaymentMethodRequest;
+use App\Models\PaymentMethod;
 
 class PaymentMethodController extends Controller
 {
@@ -31,10 +31,10 @@ class PaymentMethodController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\Storepayment_methodRequest  $request
+     * @param  \App\Http\Requests\StorePaymentMethodRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Storepayment_methodRequest $request)
+    public function store(StorePaymentMethodRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class PaymentMethodController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\payment_method  $payment_method
+     * @param  \App\Models\PaymentMethod  $payment_method
      * @return \Illuminate\Http\Response
      */
-    public function show(payment_method $payment_method)
+    public function show(PaymentMethod $payment_method)
     {
         //
     }
@@ -53,10 +53,10 @@ class PaymentMethodController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\payment_method  $payment_method
+     * @param  \App\Models\PaymentMethod  $payment_method
      * @return \Illuminate\Http\Response
      */
-    public function edit(payment_method $payment_method)
+    public function edit(PaymentMethod $payment_method)
     {
         //
     }
@@ -64,11 +64,11 @@ class PaymentMethodController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\Updatepayment_methodRequest  $request
-     * @param  \App\Models\payment_method  $payment_method
+     * @param  \App\Http\Requests\UpdatePaymentMethodRequest  $request
+     * @param  \App\Models\PaymentMethod  $payment_method
      * @return \Illuminate\Http\Response
      */
-    public function update(Updatepayment_methodRequest $request, payment_method $payment_method)
+    public function update(UpdatePaymentMethodRequest $request, PaymentMethod $payment_method)
     {
         //
     }
@@ -76,10 +76,10 @@ class PaymentMethodController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\payment_method  $payment_method
+     * @param  \App\Models\PaymentMethod  $payment_method
      * @return \Illuminate\Http\Response
      */
-    public function destroy(payment_method $payment_method)
+    public function destroy(PaymentMethod $payment_method)
     {
         //
     }

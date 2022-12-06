@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Storeuser_reviewRequest;
-use App\Http\Requests\Updateuser_reviewRequest;
-use App\Models\user_review;
+use App\Http\Requests\StoreUserReviewRequest;
+use App\Http\Requests\UpdateUserReviewRequest;
+use App\Models\UserReview;
 
 class UserReviewController extends Controller
 {
@@ -31,10 +31,10 @@ class UserReviewController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\Storeuser_reviewRequest  $request
+     * @param  \App\Http\Requests\StoreUserReviewRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Storeuser_reviewRequest $request)
+    public function store(StoreUserReviewRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class UserReviewController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\user_review  $user_review
+     * @param  \App\Models\UserReview  $user_review
      * @return \Illuminate\Http\Response
      */
-    public function show(user_review $user_review)
+    public function show(UserReview $user_review)
     {
         //
     }
@@ -53,10 +53,10 @@ class UserReviewController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\user_review  $user_review
+     * @param  \App\Models\UserReview  $user_review
      * @return \Illuminate\Http\Response
      */
-    public function edit(user_review $user_review)
+    public function edit(UserReview $user_review)
     {
         //
     }
@@ -64,11 +64,11 @@ class UserReviewController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\Updateuser_reviewRequest  $request
-     * @param  \App\Models\user_review  $user_review
+     * @param  \App\Http\Requests\UpdateUserReviewRequest  $request
+     * @param  \App\Models\UserReview  $user_review
      * @return \Illuminate\Http\Response
      */
-    public function update(Updateuser_reviewRequest $request, user_review $user_review)
+    public function update(UpdateUserReviewRequest $request, UserReview $user_review)
     {
         //
     }
@@ -76,10 +76,10 @@ class UserReviewController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\user_review  $user_review
+     * @param  \App\Models\UserReview  $user_review
      * @return \Illuminate\Http\Response
      */
-    public function destroy(user_review $user_review)
+    public function destroy(UserReview $user_review)
     {
         //
     }

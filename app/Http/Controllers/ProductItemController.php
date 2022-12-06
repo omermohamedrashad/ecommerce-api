@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Storeproduct_itemRequest;
-use App\Http\Requests\Updateproduct_itemRequest;
-use App\Models\product_item;
+use App\Http\Requests\StoreProductItemRequest;
+use App\Http\Requests\UpdateProductItemRequest;
+use App\Models\ProductItem;
 
 class ProductItemController extends Controller
 {
@@ -31,10 +31,10 @@ class ProductItemController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\Storeproduct_itemRequest  $request
+     * @param  \App\Http\Requests\StoreProductItemRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Storeproduct_itemRequest $request)
+    public function store(StoreProductItemRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class ProductItemController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\product_item  $product_item
+     * @param  \App\Models\ProductItem  $product_item
      * @return \Illuminate\Http\Response
      */
-    public function show(product_item $product_item)
+    public function show(ProductItem $product_item)
     {
         //
     }
@@ -53,10 +53,10 @@ class ProductItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\product_item  $product_item
+     * @param  \App\Models\ProductItem  $product_item
      * @return \Illuminate\Http\Response
      */
-    public function edit(product_item $product_item)
+    public function edit(ProductItem $product_item)
     {
         //
     }
@@ -64,11 +64,11 @@ class ProductItemController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\Updateproduct_itemRequest  $request
-     * @param  \App\Models\product_item  $product_item
+     * @param  \App\Http\Requests\UpdateProductItemRequest  $request
+     * @param  \App\Models\ProductItem  $product_item
      * @return \Illuminate\Http\Response
      */
-    public function update(Updateproduct_itemRequest $request, product_item $product_item)
+    public function update(UpdateProductItemRequest $request, ProductItem $product_item)
     {
         //
     }
@@ -76,10 +76,10 @@ class ProductItemController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\product_item  $product_item
+     * @param  \App\Models\ProductItem  $product_item
      * @return \Illuminate\Http\Response
      */
-    public function destroy(product_item $product_item)
+    public function destroy(ProductItem $product_item)
     {
         //
     }

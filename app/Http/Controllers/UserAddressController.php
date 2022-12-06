@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Storeuser_addressRequest;
-use App\Http\Requests\Updateuser_addressRequest;
-use App\Models\user_address;
+use App\Http\Requests\StoreUserAddressRequest;
+use App\Http\Requests\UpdateUserAddressRequest;
+use App\Models\UserAddress;
 
 class UserAddressController extends Controller
 {
@@ -31,10 +31,10 @@ class UserAddressController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\Storeuser_addressRequest  $request
+     * @param  \App\Http\Requests\StoreUserAddressRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Storeuser_addressRequest $request)
+    public function store(StoreUserAddressRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class UserAddressController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\user_address  $user_address
+     * @param  \App\Models\UserAddress  $user_address
      * @return \Illuminate\Http\Response
      */
-    public function show(user_address $user_address)
+    public function show(UserAddress $user_address)
     {
         //
     }
@@ -53,10 +53,10 @@ class UserAddressController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\user_address  $user_address
+     * @param  \App\Models\UserAddress  $user_address
      * @return \Illuminate\Http\Response
      */
-    public function edit(user_address $user_address)
+    public function edit(UserAddress $user_address)
     {
         //
     }
@@ -64,11 +64,11 @@ class UserAddressController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\Updateuser_addressRequest  $request
-     * @param  \App\Models\user_address  $user_address
+     * @param  \App\Http\Requests\UpdateUserAddressRequest  $request
+     * @param  \App\Models\UserAddress  $user_address
      * @return \Illuminate\Http\Response
      */
-    public function update(Updateuser_addressRequest $request, user_address $user_address)
+    public function update(UpdateUserAddressRequest $request, UserAddress $user_address)
     {
         //
     }
@@ -76,10 +76,10 @@ class UserAddressController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\user_address  $user_address
+     * @param  \App\Models\UserAddress  $user_address
      * @return \Illuminate\Http\Response
      */
-    public function destroy(user_address $user_address)
+    public function destroy(UserAddress $user_address)
     {
         //
     }

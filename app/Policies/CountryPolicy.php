@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\country;
+use App\Models\Country;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class CountryPolicy
@@ -25,10 +25,10 @@ class CountryPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\country  $country
+     * @param  \App\Models\Country  $country
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, country $country)
+    public function view(User $user, Country $country)
     {
         //
     }
@@ -48,10 +48,10 @@ class CountryPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\country  $country
+     * @param  \App\Models\Country  $country
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, country $country)
+    public function update(User $user, Country $country)
     {
         //
     }
@@ -60,10 +60,10 @@ class CountryPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\country  $country
+     * @param  \App\Models\Country  $country
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, country $country)
+    public function delete(User $user, Country $country)
     {
         //
     }
@@ -72,10 +72,10 @@ class CountryPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\country  $country
+     * @param  \App\Models\Country  $country
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, country $country)
+    public function restore(User $user, Country $country)
     {
         //
     }
@@ -84,10 +84,10 @@ class CountryPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\country  $country
+     * @param  \App\Models\Country  $country
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, country $country)
+    public function forceDelete(User $user, Country $country)
     {
         //
     }

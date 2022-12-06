@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StorecartRequest;
-use App\Http\Requests\UpdatecartRequest;
-use App\Models\cart;
+use App\Http\Requests\StoreCartRequest;
+use App\Http\Requests\UpdateCartRequest;
+use App\Models\Cart;
 
 class CartController extends Controller
 {
@@ -31,10 +31,10 @@ class CartController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StorecartRequest  $request
+     * @param  \App\Http\Requests\StoreCartRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorecartRequest $request)
+    public function store(StoreCartRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class CartController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\cart  $cart
+     * @param  \App\Models\Cart  $cart
      * @return \Illuminate\Http\Response
      */
-    public function show(cart $cart)
+    public function show(Cart $cart)
     {
         //
     }
@@ -53,10 +53,10 @@ class CartController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\cart  $cart
+     * @param  \App\Models\Cart  $cart
      * @return \Illuminate\Http\Response
      */
-    public function edit(cart $cart)
+    public function edit(Cart $cart)
     {
         //
     }
@@ -64,11 +64,11 @@ class CartController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatecartRequest  $request
-     * @param  \App\Models\cart  $cart
+     * @param  \App\Http\Requests\UpdateCartRequest  $request
+     * @param  \App\Models\Cart  $cart
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatecartRequest $request, cart $cart)
+    public function update(UpdateCartRequest $request, Cart $cart)
     {
         //
     }
@@ -76,10 +76,10 @@ class CartController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\cart  $cart
+     * @param  \App\Models\Cart  $cart
      * @return \Illuminate\Http\Response
      */
-    public function destroy(cart $cart)
+    public function destroy(Cart $cart)
     {
         //
     }

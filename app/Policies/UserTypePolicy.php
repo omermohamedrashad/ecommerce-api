@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\user_type;
+use App\Models\UserType;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class UserTypePolicy
@@ -25,10 +25,10 @@ class UserTypePolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\user_type  $userType
+     * @param  \App\Models\UserType  $userType
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, user_type $userType)
+    public function view(User $user, UserType $userType)
     {
         //
     }
@@ -48,10 +48,10 @@ class UserTypePolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\user_type  $userType
+     * @param  \App\Models\UserType  $userType
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, user_type $userType)
+    public function update(User $user, UserType $userType)
     {
         //
     }
@@ -60,10 +60,10 @@ class UserTypePolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\user_type  $userType
+     * @param  \App\Models\UserType  $userType
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, user_type $userType)
+    public function delete(User $user, UserType $userType)
     {
         //
     }
@@ -72,10 +72,10 @@ class UserTypePolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\user_type  $userType
+     * @param  \App\Models\UserType  $userType
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, user_type $userType)
+    public function restore(User $user, UserType $userType)
     {
         //
     }
@@ -84,10 +84,10 @@ class UserTypePolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\user_type  $userType
+     * @param  \App\Models\UserType  $userType
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, user_type $userType)
+    public function forceDelete(User $user, UserType $userType)
     {
         //
     }

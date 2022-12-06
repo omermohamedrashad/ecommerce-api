@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Storevariation_optionRequest;
-use App\Http\Requests\Updatevariation_optionRequest;
-use App\Models\variation_option;
+use App\Http\Requests\StoreVariationOptionRequest;
+use App\Http\Requests\UpdateVariationOptionRequest;
+use App\Models\VariationOption;
 
 class VariationOptionController extends Controller
 {
@@ -31,10 +31,10 @@ class VariationOptionController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\Storevariation_optionRequest  $request
+     * @param  \App\Http\Requests\StoreVariationOptionRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Storevariation_optionRequest $request)
+    public function store(StoreVariationOptionRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class VariationOptionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\variation_option  $variation_option
+     * @param  \App\Models\VariationOption  $variation_option
      * @return \Illuminate\Http\Response
      */
-    public function show(variation_option $variation_option)
+    public function show(VariationOption $variation_option)
     {
         //
     }
@@ -53,10 +53,10 @@ class VariationOptionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\variation_option  $variation_option
+     * @param  \App\Models\VariationOption  $variation_option
      * @return \Illuminate\Http\Response
      */
-    public function edit(variation_option $variation_option)
+    public function edit(VariationOption $variation_option)
     {
         //
     }
@@ -64,11 +64,11 @@ class VariationOptionController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\Updatevariation_optionRequest  $request
-     * @param  \App\Models\variation_option  $variation_option
+     * @param  \App\Http\Requests\UpdateVariationOptionRequest  $request
+     * @param  \App\Models\VariationOption  $variation_option
      * @return \Illuminate\Http\Response
      */
-    public function update(Updatevariation_optionRequest $request, variation_option $variation_option)
+    public function update(UpdateVariationOptionRequest $request, VariationOption $variation_option)
     {
         //
     }
@@ -76,10 +76,10 @@ class VariationOptionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\variation_option  $variation_option
+     * @param  \App\Models\VariationOption  $variation_option
      * @return \Illuminate\Http\Response
      */
-    public function destroy(variation_option $variation_option)
+    public function destroy(VariationOption $variation_option)
     {
         //
     }

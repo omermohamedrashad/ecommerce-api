@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\order;
+use App\Models\Order;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class OrderPolicy
@@ -25,10 +25,10 @@ class OrderPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order  $order
+     * @param  \App\Models\Order  $order
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, order $order)
+    public function view(User $user, Order $order)
     {
         //
     }
@@ -48,10 +48,10 @@ class OrderPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order  $order
+     * @param  \App\Models\Order  $order
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, order $order)
+    public function update(User $user, Order $order)
     {
         //
     }
@@ -60,10 +60,10 @@ class OrderPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order  $order
+     * @param  \App\Models\Order  $order
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, order $order)
+    public function delete(User $user, Order $order)
     {
         //
     }
@@ -72,10 +72,10 @@ class OrderPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order  $order
+     * @param  \App\Models\Order  $order
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, order $order)
+    public function restore(User $user, Order $order)
     {
         //
     }
@@ -84,10 +84,10 @@ class OrderPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order  $order
+     * @param  \App\Models\Order  $order
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, order $order)
+    public function forceDelete(User $user, Order $order)
     {
         //
     }

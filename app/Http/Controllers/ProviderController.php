@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreproviderRequest;
-use App\Http\Requests\UpdateproviderRequest;
-use App\Models\provider;
+use App\Http\Requests\StoreProviderRequest;
+use App\Http\Requests\UpdateProviderRequest;
+use App\Models\Provider;
 
 class ProviderController extends Controller
 {
@@ -31,10 +31,10 @@ class ProviderController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreproviderRequest  $request
+     * @param  \App\Http\Requests\StoreProviderRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreproviderRequest $request)
+    public function store(StoreProviderRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class ProviderController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\provider  $provider
+     * @param  \App\Models\Provider  $provider
      * @return \Illuminate\Http\Response
      */
-    public function show(provider $provider)
+    public function show(Provider $provider)
     {
         //
     }
@@ -53,10 +53,10 @@ class ProviderController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\provider  $provider
+     * @param  \App\Models\Provider  $provider
      * @return \Illuminate\Http\Response
      */
-    public function edit(provider $provider)
+    public function edit(Provider $provider)
     {
         //
     }
@@ -64,11 +64,11 @@ class ProviderController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateproviderRequest  $request
-     * @param  \App\Models\provider  $provider
+     * @param  \App\Http\Requests\UpdateProviderRequest  $request
+     * @param  \App\Models\Provider  $provider
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateproviderRequest $request, provider $provider)
+    public function update(UpdateProviderRequest $request, Provider $provider)
     {
         //
     }
@@ -76,10 +76,10 @@ class ProviderController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\provider  $provider
+     * @param  \App\Models\Provider  $provider
      * @return \Illuminate\Http\Response
      */
-    public function destroy(provider $provider)
+    public function destroy(Provider $provider)
     {
         //
     }

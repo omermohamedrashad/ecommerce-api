@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Storeuser_typeRequest;
-use App\Http\Requests\Updateuser_typeRequest;
-use App\Models\user_type;
+use App\Http\Requests\StoreUserTypeRequest;
+use App\Http\Requests\UpdateUserTypeRequest;
+use App\Models\UserType;
 
 class UserTypeController extends Controller
 {
@@ -31,10 +31,10 @@ class UserTypeController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\Storeuser_typeRequest  $request
+     * @param  \App\Http\Requests\StoreUserTypeRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Storeuser_typeRequest $request)
+    public function store(StoreUserTypeRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class UserTypeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\user_type  $user_type
+     * @param  \App\Models\UserType  $user_type
      * @return \Illuminate\Http\Response
      */
-    public function show(user_type $user_type)
+    public function show(UserType $user_type)
     {
         //
     }
@@ -53,10 +53,10 @@ class UserTypeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\user_type  $user_type
+     * @param  \App\Models\UserType  $user_type
      * @return \Illuminate\Http\Response
      */
-    public function edit(user_type $user_type)
+    public function edit(UserType $user_type)
     {
         //
     }
@@ -64,11 +64,11 @@ class UserTypeController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\Updateuser_typeRequest  $request
-     * @param  \App\Models\user_type  $user_type
+     * @param  \App\Http\Requests\UpdateUserTypeRequest  $request
+     * @param  \App\Models\UserType  $user_type
      * @return \Illuminate\Http\Response
      */
-    public function update(Updateuser_typeRequest $request, user_type $user_type)
+    public function update(UpdateUserTypeRequest $request, UserType $user_type)
     {
         //
     }
@@ -76,10 +76,10 @@ class UserTypeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\user_type  $user_type
+     * @param  \App\Models\UserType  $user_type
      * @return \Illuminate\Http\Response
      */
-    public function destroy(user_type $user_type)
+    public function destroy(UserType $user_type)
     {
         //
     }

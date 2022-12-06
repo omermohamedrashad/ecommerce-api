@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Storeshipping_methodRequest;
-use App\Http\Requests\Updateshipping_methodRequest;
-use App\Models\shipping_method;
+use App\Http\Requests\StoreShippingMethodRequest;
+use App\Http\Requests\UpdateShippingMethodRequest;
+use App\Models\ShippingMethod;
 
 class ShippingMethodController extends Controller
 {
@@ -31,10 +31,10 @@ class ShippingMethodController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\Storeshipping_methodRequest  $request
+     * @param  \App\Http\Requests\StoreShippingMethodRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Storeshipping_methodRequest $request)
+    public function store(StoreShippingMethodRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class ShippingMethodController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\shipping_method  $shipping_method
+     * @param  \App\Models\ShippingMethod  $shipping_method
      * @return \Illuminate\Http\Response
      */
-    public function show(shipping_method $shipping_method)
+    public function show(ShippingMethod $shipping_method)
     {
         //
     }
@@ -53,10 +53,10 @@ class ShippingMethodController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\shipping_method  $shipping_method
+     * @param  \App\Models\ShippingMethod  $shipping_method
      * @return \Illuminate\Http\Response
      */
-    public function edit(shipping_method $shipping_method)
+    public function edit(ShippingMethod $shipping_method)
     {
         //
     }
@@ -64,11 +64,11 @@ class ShippingMethodController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\Updateshipping_methodRequest  $request
-     * @param  \App\Models\shipping_method  $shipping_method
+     * @param  \App\Http\Requests\UpdateShippingMethodRequest  $request
+     * @param  \App\Models\ShippingMethod  $shipping_method
      * @return \Illuminate\Http\Response
      */
-    public function update(Updateshipping_methodRequest $request, shipping_method $shipping_method)
+    public function update(UpdateShippingMethodRequest $request, ShippingMethod $shipping_method)
     {
         //
     }
@@ -76,10 +76,10 @@ class ShippingMethodController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\shipping_method  $shipping_method
+     * @param  \App\Models\ShippingMethod  $shipping_method
      * @return \Illuminate\Http\Response
      */
-    public function destroy(shipping_method $shipping_method)
+    public function destroy(ShippingMethod $shipping_method)
     {
         //
     }

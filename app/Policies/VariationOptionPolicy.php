@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\variation_option;
+use App\Models\VariationOption;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class VariationOptionPolicy
@@ -25,10 +25,10 @@ class VariationOptionPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\variation_option  $variationOption
+     * @param  \App\Models\VariationOption  $variationOption
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, variation_option $variationOption)
+    public function view(User $user, VariationOption $variationOption)
     {
         //
     }
@@ -48,10 +48,10 @@ class VariationOptionPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\variation_option  $variationOption
+     * @param  \App\Models\VariationOption  $variationOption
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, variation_option $variationOption)
+    public function update(User $user, VariationOption $variationOption)
     {
         //
     }
@@ -60,10 +60,10 @@ class VariationOptionPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\variation_option  $variationOption
+     * @param  \App\Models\VariationOption  $variationOption
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, variation_option $variationOption)
+    public function delete(User $user, VariationOption $variationOption)
     {
         //
     }
@@ -72,10 +72,10 @@ class VariationOptionPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\variation_option  $variationOption
+     * @param  \App\Models\VariationOption  $variationOption
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, variation_option $variationOption)
+    public function restore(User $user, VariationOption $variationOption)
     {
         //
     }
@@ -84,10 +84,10 @@ class VariationOptionPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\variation_option  $variationOption
+     * @param  \App\Models\VariationOption  $variationOption
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, variation_option $variationOption)
+    public function forceDelete(User $user, VariationOption $variationOption)
     {
         //
     }

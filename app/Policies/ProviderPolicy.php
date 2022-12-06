@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\provider;
+use App\Models\Provider;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class ProviderPolicy
@@ -25,10 +25,10 @@ class ProviderPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\provider  $provider
+     * @param  \App\Models\Provider  $provider
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, provider $provider)
+    public function view(User $user, Provider $provider)
     {
         //
     }
@@ -48,10 +48,10 @@ class ProviderPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\provider  $provider
+     * @param  \App\Models\Provider  $provider
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, provider $provider)
+    public function update(User $user, Provider $provider)
     {
         //
     }
@@ -60,10 +60,10 @@ class ProviderPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\provider  $provider
+     * @param  \App\Models\Provider  $provider
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, provider $provider)
+    public function delete(User $user, Provider $provider)
     {
         //
     }
@@ -72,10 +72,10 @@ class ProviderPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\provider  $provider
+     * @param  \App\Models\Provider  $provider
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, provider $provider)
+    public function restore(User $user, Provider $provider)
     {
         //
     }
@@ -84,10 +84,10 @@ class ProviderPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\provider  $provider
+     * @param  \App\Models\Provider  $provider
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, provider $provider)
+    public function forceDelete(User $user, Provider $provider)
     {
         //
     }

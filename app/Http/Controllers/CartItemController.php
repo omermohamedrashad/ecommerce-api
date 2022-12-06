@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Storecart_itemRequest;
-use App\Http\Requests\Updatecart_itemRequest;
-use App\Models\cart_item;
+use App\Http\Requests\StoreCartItemRequest;
+use App\Http\Requests\UpdateCartItemRequest;
+use App\Models\CartItem;
 
 class CartItemController extends Controller
 {
@@ -31,10 +31,10 @@ class CartItemController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\Storecart_itemRequest  $request
+     * @param  \App\Http\Requests\StoreCartItemRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Storecart_itemRequest $request)
+    public function store(StoreCartItemRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class CartItemController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\cart_item  $cart_item
+     * @param  \App\Models\CartItem  $cart_item
      * @return \Illuminate\Http\Response
      */
-    public function show(cart_item $cart_item)
+    public function show(CartItem $cart_item)
     {
         //
     }
@@ -53,10 +53,10 @@ class CartItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\cart_item  $cart_item
+     * @param  \App\Models\CartItem  $cart_item
      * @return \Illuminate\Http\Response
      */
-    public function edit(cart_item $cart_item)
+    public function edit(CartItem $cart_item)
     {
         //
     }
@@ -64,11 +64,11 @@ class CartItemController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\Updatecart_itemRequest  $request
-     * @param  \App\Models\cart_item  $cart_item
+     * @param  \App\Http\Requests\UpdateCartItemRequest  $request
+     * @param  \App\Models\CartItem  $cart_item
      * @return \Illuminate\Http\Response
      */
-    public function update(Updatecart_itemRequest $request, cart_item $cart_item)
+    public function update(UpdateCartItemRequest $request, CartItem $cart_item)
     {
         //
     }
@@ -76,10 +76,10 @@ class CartItemController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\cart_item  $cart_item
+     * @param  \App\Models\CartItem  $cart_item
      * @return \Illuminate\Http\Response
      */
-    public function destroy(cart_item $cart_item)
+    public function destroy(CartItem $cart_item)
     {
         //
     }

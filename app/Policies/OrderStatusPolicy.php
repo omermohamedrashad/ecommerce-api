@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\order_status;
+use App\Models\OrderStatus;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class OrderStatusPolicy
@@ -25,10 +25,10 @@ class OrderStatusPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order_status  $orderStatus
+     * @param  \App\Models\OrderStatus  $orderStatus
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, order_status $orderStatus)
+    public function view(User $user, OrderStatus $orderStatus)
     {
         //
     }
@@ -48,10 +48,10 @@ class OrderStatusPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order_status  $orderStatus
+     * @param  \App\Models\OrderStatus  $orderStatus
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, order_status $orderStatus)
+    public function update(User $user, OrderStatus $orderStatus)
     {
         //
     }
@@ -60,10 +60,10 @@ class OrderStatusPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order_status  $orderStatus
+     * @param  \App\Models\OrderStatus  $orderStatus
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, order_status $orderStatus)
+    public function delete(User $user, OrderStatus $orderStatus)
     {
         //
     }
@@ -72,10 +72,10 @@ class OrderStatusPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order_status  $orderStatus
+     * @param  \App\Models\OrderStatus  $orderStatus
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, order_status $orderStatus)
+    public function restore(User $user, OrderStatus $orderStatus)
     {
         //
     }
@@ -84,10 +84,10 @@ class OrderStatusPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\order_status  $orderStatus
+     * @param  \App\Models\OrderStatus  $orderStatus
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, order_status $orderStatus)
+    public function forceDelete(User $user, OrderStatus $orderStatus)
     {
         //
     }

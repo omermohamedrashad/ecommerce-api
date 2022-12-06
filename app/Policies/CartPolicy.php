@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\cart;
+use App\Models\Cart;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class CartPolicy
@@ -25,10 +25,10 @@ class CartPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\cart  $cart
+     * @param  \App\Models\Cart  $cart
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, cart $cart)
+    public function view(User $user, Cart $cart)
     {
         //
     }
@@ -48,10 +48,10 @@ class CartPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\cart  $cart
+     * @param  \App\Models\Cart  $cart
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, cart $cart)
+    public function update(User $user, Cart $cart)
     {
         //
     }
@@ -60,10 +60,10 @@ class CartPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\cart  $cart
+     * @param  \App\Models\Cart  $cart
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, cart $cart)
+    public function delete(User $user, Cart $cart)
     {
         //
     }
@@ -72,10 +72,10 @@ class CartPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\cart  $cart
+     * @param  \App\Models\Cart  $cart
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, cart $cart)
+    public function restore(User $user, Cart $cart)
     {
         //
     }
@@ -84,10 +84,10 @@ class CartPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\cart  $cart
+     * @param  \App\Models\Cart  $cart
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, cart $cart)
+    public function forceDelete(User $user, Cart $cart)
     {
         //
     }

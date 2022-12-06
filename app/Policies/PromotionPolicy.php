@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\promotion;
+use App\Models\Promotion;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class PromotionPolicy
@@ -25,10 +25,10 @@ class PromotionPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\promotion  $promotion
+     * @param  \App\Models\Promotion  $promotion
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, promotion $promotion)
+    public function view(User $user, Promotion $promotion)
     {
         //
     }
@@ -48,10 +48,10 @@ class PromotionPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\promotion  $promotion
+     * @param  \App\Models\Promotion  $promotion
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, promotion $promotion)
+    public function update(User $user, Promotion $promotion)
     {
         //
     }
@@ -60,10 +60,10 @@ class PromotionPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\promotion  $promotion
+     * @param  \App\Models\Promotion  $promotion
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, promotion $promotion)
+    public function delete(User $user, Promotion $promotion)
     {
         //
     }
@@ -72,10 +72,10 @@ class PromotionPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\promotion  $promotion
+     * @param  \App\Models\Promotion  $promotion
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, promotion $promotion)
+    public function restore(User $user, Promotion $promotion)
     {
         //
     }
@@ -84,10 +84,10 @@ class PromotionPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\promotion  $promotion
+     * @param  \App\Models\Promotion  $promotion
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, promotion $promotion)
+    public function forceDelete(User $user, Promotion $promotion)
     {
         //
     }

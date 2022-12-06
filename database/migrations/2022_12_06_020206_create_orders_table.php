@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('user_id');
             $table->integer('payment_method_id');
             $table->integer('user_address_id');
-            $table->integer('shipping_method');
+            $table->integer('shipping_method_id');
             $table->integer('order_status_id');
             $table->integer('order_total');
             $table->dateTime('order_date');

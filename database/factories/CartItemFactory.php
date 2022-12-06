@@ -5,7 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\cart_item>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\CartItem>
  */
 class CartItemFactory extends Factory
 {

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreaddressRequest;
-use App\Http\Requests\UpdateaddressRequest;
+use App\Http\Requests\StoreAddressRequest;
+use App\Http\Requests\UpdateAddressRequest;
 use App\Models\address;
 
 class AddressController extends Controller
@@ -31,10 +31,10 @@ class AddressController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreaddressRequest  $request
+     * @param  \App\Http\Requests\StoreAddressRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreaddressRequest $request)
+    public function store(StoreAddressRequest $request)
     {
         //
     }
@@ -64,11 +64,11 @@ class AddressController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateaddressRequest  $request
+     * @param  \App\Http\Requests\UpdateAddressRequest  $request
      * @param  \App\Models\address  $address
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateaddressRequest $request, address $address)
+    public function update(UpdateAddressRequest $request, address $address)
     {
         //
     }

@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\cart_item;
+use App\Models\CartItem;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class CartItemPolicy
@@ -25,10 +25,10 @@ class CartItemPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\cart_item  $cartItem
+     * @param  \App\Models\CartItem  $cartItem
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, cart_item $cartItem)
+    public function view(User $user, CartItem $cartItem)
     {
         //
     }
@@ -48,10 +48,10 @@ class CartItemPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\cart_item  $cartItem
+     * @param  \App\Models\CartItem  $cartItem
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, cart_item $cartItem)
+    public function update(User $user, CartItem $cartItem)
     {
         //
     }
@@ -60,10 +60,10 @@ class CartItemPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\cart_item  $cartItem
+     * @param  \App\Models\CartItem  $cartItem
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, cart_item $cartItem)
+    public function delete(User $user, CartItem $cartItem)
     {
         //
     }
@@ -72,10 +72,10 @@ class CartItemPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\cart_item  $cartItem
+     * @param  \App\Models\CartItem  $cartItem
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, cart_item $cartItem)
+    public function restore(User $user, CartItem $cartItem)
     {
         //
     }
@@ -84,10 +84,10 @@ class CartItemPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\cart_item  $cartItem
+     * @param  \App\Models\CartItem  $cartItem
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, cart_item $cartItem)
+    public function forceDelete(User $user, CartItem $cartItem)
     {
         //
     }

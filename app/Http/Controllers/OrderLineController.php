@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Storeorder_lineRequest;
-use App\Http\Requests\Updateorder_lineRequest;
-use App\Models\order_line;
+use App\Http\Requests\StoreOrderLineRequest;
+use App\Http\Requests\UpdateOrderLineRequest;
+use App\Models\OrderLine;
 
 class OrderLineController extends Controller
 {
@@ -31,10 +31,10 @@ class OrderLineController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\Storeorder_lineRequest  $request
+     * @param  \App\Http\Requests\StoreOrderLineRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Storeorder_lineRequest $request)
+    public function store(StoreOrderLineRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class OrderLineController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\order_line  $order_line
+     * @param  \App\Models\OrderLine  $order_line
      * @return \Illuminate\Http\Response
      */
-    public function show(order_line $order_line)
+    public function show(OrderLine $order_line)
     {
         //
     }
@@ -53,10 +53,10 @@ class OrderLineController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\order_line  $order_line
+     * @param  \App\Models\OrderLine  $order_line
      * @return \Illuminate\Http\Response
      */
-    public function edit(order_line $order_line)
+    public function edit(OrderLine $order_line)
     {
         //
     }
@@ -64,11 +64,11 @@ class OrderLineController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\Updateorder_lineRequest  $request
-     * @param  \App\Models\order_line  $order_line
+     * @param  \App\Http\Requests\UpdateOrderLineRequest  $request
+     * @param  \App\Models\OrderLine  $order_line
      * @return \Illuminate\Http\Response
      */
-    public function update(Updateorder_lineRequest $request, order_line $order_line)
+    public function update(UpdateOrderLineRequest $request, OrderLine $order_line)
     {
         //
     }
@@ -76,10 +76,10 @@ class OrderLineController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\order_line  $order_line
+     * @param  \App\Models\OrderLine  $order_line
      * @return \Illuminate\Http\Response
      */
-    public function destroy(order_line $order_line)
+    public function destroy(OrderLine $order_line)
     {
         //
     }

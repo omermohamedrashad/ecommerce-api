@@ -5,7 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\promotion_code>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\PromotionCode>
  */
 class PromotionCodeFactory extends Factory
 {
