@@ -42,10 +42,10 @@ class UserReviewController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\UserReview  $user_review
+     * @param  \App\Models\UserReview  $user_Review
      * @return \Illuminate\Http\Response
      */
-    public function show(UserReview $user_review)
+    public function show(UserReview $user_Review)
     {
         //
     }
@@ -53,10 +53,10 @@ class UserReviewController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\UserReview  $user_review
+     * @param  \App\Models\UserReview  $user_Review
      * @return \Illuminate\Http\Response
      */
-    public function edit(UserReview $user_review)
+    public function edit(UserReview $user_Review)
     {
         //
     }
@@ -65,10 +65,10 @@ class UserReviewController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdateUserReviewRequest  $request
-     * @param  \App\Models\UserReview  $user_review
+     * @param  \App\Models\UserReview  $user_Review
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateUserReviewRequest $request, UserReview $user_review)
+    public function update(UpdateUserReviewRequest $request, UserReview $user_Review)
     {
         //
     }
@@ -76,10 +76,10 @@ class UserReviewController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\UserReview  $user_review
+     * @param  \App\Models\UserReview  $user_Review
      * @return \Illuminate\Http\Response
      */
-    public function destroy(UserReview $user_review)
+    public function destroy(UserReview $user_Review)
     {
         //
     }

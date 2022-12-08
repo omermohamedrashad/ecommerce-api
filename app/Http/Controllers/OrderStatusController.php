@@ -42,10 +42,10 @@ class OrderStatusController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\OrderStatus  $order_status
+     * @param  \App\Models\OrderStatus  $orderStatus
      * @return \Illuminate\Http\Response
      */
-    public function show(OrderStatus $order_status)
+    public function show(OrderStatus $orderStatus)
     {
         //
     }
@@ -53,10 +53,10 @@ class OrderStatusController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\OrderStatus  $order_status
+     * @param  \App\Models\OrderStatus  $orderStatus
      * @return \Illuminate\Http\Response
      */
-    public function edit(OrderStatus $order_status)
+    public function edit(OrderStatus $orderStatus)
     {
         //
     }
@@ -65,10 +65,10 @@ class OrderStatusController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdateOrderStatusRequest  $request
-     * @param  \App\Models\OrderStatus  $order_status
+     * @param  \App\Models\OrderStatus  $orderStatus
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateOrderStatusRequest $request, OrderStatus $order_status)
+    public function update(UpdateOrderStatusRequest $request, OrderStatus $orderStatus)
     {
         //
     }
@@ -76,10 +76,10 @@ class OrderStatusController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\OrderStatus  $order_status
+     * @param  \App\Models\OrderStatus  $orderStatus
      * @return \Illuminate\Http\Response
      */
-    public function destroy(OrderStatus $order_status)
+    public function destroy(OrderStatus $orderStatus)
     {
         //
     }

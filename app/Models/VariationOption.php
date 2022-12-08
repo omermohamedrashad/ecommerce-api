@@ -20,7 +20,7 @@ class VariationOption extends Model
 
     public function product_items()
     {
-        return $this->belongsToMany(ProductItem::class);
+        return $this->belongsToMany(ProductItem::class,'product_fillters');
     }
 
 }

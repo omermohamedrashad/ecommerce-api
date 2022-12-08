@@ -10,11 +10,11 @@ class Promotion extends Model
     use HasFactory;
 
     protected $fillable = [
-      'name',
-      'description',
-      'discount_rate',
-      'start_date',
-      'end_date',
+        'name',
+        'description',
+        'discount_rate',
+        'start_date',
+        'end_date',
     ];
 
     public function promotion_codes(){
@@ -23,6 +23,6 @@ class Promotion extends Model
 
     public function product_categories()
     {
-        return $this->belongsToMany(ProductCategory::class);
+        return $this->belongsToMany(ProductCategory::class,'promotion_categories');
     }
 }

@@ -42,10 +42,10 @@ class PaymentMethodController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\PaymentMethod  $payment_method
+     * @param  \App\Models\PaymentMethod  $payment_Method
      * @return \Illuminate\Http\Response
      */
-    public function show(PaymentMethod $payment_method)
+    public function show(PaymentMethod $payment_Method)
     {
         //
     }
@@ -53,10 +53,10 @@ class PaymentMethodController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\PaymentMethod  $payment_method
+     * @param  \App\Models\PaymentMethod  $payment_Method
      * @return \Illuminate\Http\Response
      */
-    public function edit(PaymentMethod $payment_method)
+    public function edit(PaymentMethod $payment_Method)
     {
         //
     }
@@ -65,10 +65,10 @@ class PaymentMethodController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdatePaymentMethodRequest  $request
-     * @param  \App\Models\PaymentMethod  $payment_method
+     * @param  \App\Models\PaymentMethod  $payment_Method
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatePaymentMethodRequest $request, PaymentMethod $payment_method)
+    public function update(UpdatePaymentMethodRequest $request, PaymentMethod $payment_Method)
     {
         //
     }
@@ -76,10 +76,10 @@ class PaymentMethodController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\PaymentMethod  $payment_method
+     * @param  \App\Models\PaymentMethod  $payment_Method
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PaymentMethod $payment_method)
+    public function destroy(PaymentMethod $payment_Method)
     {
         //
     }

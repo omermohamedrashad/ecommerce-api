@@ -4,18 +4,21 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreAddressRequest;
 use App\Http\Requests\UpdateAddressRequest;
-use App\Models\address;
+use App\Http\Resources\AddressCollection;
+use App\Http\Resources\AddressResource;
+use App\Models\Address;
+use Illuminate\Http\Request;
 
 class AddressController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return AddressCollection|\Illuminate\Database\Eloquent\Collection|\Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        return new AddressCollection(Address::with('countries')->get());
     }
 
     /**
@@ -42,21 +45,21 @@ class AddressController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\address  $address
+     * @param  \App\Models\Address  $address
      * @return \Illuminate\Http\Response
      */
-    public function show(address $address)
+    public function show(Address $address)
     {
-        //
+        return new AddressResource($address);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\address  $address
+     * @param  \App\Models\Address  $address
      * @return \Illuminate\Http\Response
      */
-    public function edit(address $address)
+    public function edit(Address $address)
     {
         //
     }
@@ -65,10 +68,10 @@ class AddressController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdateAddressRequest  $request
-     * @param  \App\Models\address  $address
+     * @param  \App\Models\Address  $address
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateAddressRequest $request, address $address)
+    public function update(UpdateAddressRequest $request, Address $address)
     {
         //
     }
@@ -76,10 +79,10 @@ class AddressController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\address  $address
+     * @param  \App\Models\Address  $address
      * @return \Illuminate\Http\Response
      */
-    public function destroy(address $address)
+    public function destroy(Address $address)
     {
         //
     }

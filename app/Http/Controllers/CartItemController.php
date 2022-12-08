@@ -42,10 +42,10 @@ class CartItemController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CartItem  $cart_item
+     * @param  \App\Models\CartItem  $cart_Item
      * @return \Illuminate\Http\Response
      */
-    public function show(CartItem $cart_item)
+    public function show(CartItem $cart_Item)
     {
         //
     }
@@ -53,10 +53,10 @@ class CartItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CartItem  $cart_item
+     * @param  \App\Models\CartItem  $cart_Item
      * @return \Illuminate\Http\Response
      */
-    public function edit(CartItem $cart_item)
+    public function edit(CartItem $cart_Item)
     {
         //
     }
@@ -65,10 +65,10 @@ class CartItemController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdateCartItemRequest  $request
-     * @param  \App\Models\CartItem  $cart_item
+     * @param  \App\Models\CartItem  $cart_Item
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCartItemRequest $request, CartItem $cart_item)
+    public function update(UpdateCartItemRequest $request, CartItem $cart_Item)
     {
         //
     }
@@ -76,10 +76,10 @@ class CartItemController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CartItem  $cart_item
+     * @param  \App\Models\CartItem  $cart_Item
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CartItem $cart_item)
+    public function destroy(CartItem $cart_Item)
     {
         //
     }

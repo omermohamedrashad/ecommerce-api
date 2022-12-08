@@ -42,10 +42,10 @@ class UserTypeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\UserType  $user_type
+     * @param  \App\Models\UserType  $userType
      * @return \Illuminate\Http\Response
      */
-    public function show(UserType $user_type)
+    public function show(UserType $userType)
     {
         //
     }
@@ -53,10 +53,10 @@ class UserTypeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\UserType  $user_type
+     * @param  \App\Models\UserType  $userType
      * @return \Illuminate\Http\Response
      */
-    public function edit(UserType $user_type)
+    public function edit(UserType $userType)
     {
         //
     }
@@ -65,10 +65,10 @@ class UserTypeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdateUserTypeRequest  $request
-     * @param  \App\Models\UserType  $user_type
+     * @param  \App\Models\UserType  $userType
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateUserTypeRequest $request, UserType $user_type)
+    public function update(UpdateUserTypeRequest $request, UserType $userType)
     {
         //
     }
@@ -76,10 +76,10 @@ class UserTypeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\UserType  $user_type
+     * @param  \App\Models\UserType  $userType
      * @return \Illuminate\Http\Response
      */
-    public function destroy(UserType $user_type)
+    public function destroy(UserType $userType)
     {
         //
     }

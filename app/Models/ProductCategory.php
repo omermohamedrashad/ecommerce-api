@@ -30,7 +30,7 @@ class ProductCategory extends Model
 
     public function promotions()
     {
-        return $this->belongsToMany(Promotion::class);
+        return $this->belongsToMany(Promotion::class,'promotion_categories');
     }
 
 

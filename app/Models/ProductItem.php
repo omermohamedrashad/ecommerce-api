@@ -17,10 +17,6 @@ class ProductItem extends Model
         'price',
     ];
 
-    public function cart_items(){
-        return $this->hasMany(CartItem::class);
-    }
-
     public function order_lines(){
         return $this->hasMany(OrderLine::class);
     }
@@ -31,7 +27,11 @@ class ProductItem extends Model
 
     public function variation_options()
     {
-        return $this->belongsToMany(VariationOption::class);
+        return $this->belongsToMany(VariationOption::class,'product_fillters');
+    }
+
+    public function carts(){
+        return $this->belongsToMany(Cart::class,'cart_items');
     }
 
 }

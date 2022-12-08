@@ -42,10 +42,10 @@ class ProductVariationController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ProductVariation  $product_variation
+     * @param  \App\Models\ProductVariation  $product_Variation
      * @return \Illuminate\Http\Response
      */
-    public function show(ProductVariation $product_variation)
+    public function show(ProductVariation $product_Variation)
     {
         //
     }
@@ -53,10 +53,10 @@ class ProductVariationController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ProductVariation  $product_variation
+     * @param  \App\Models\ProductVariation  $product_Variation
      * @return \Illuminate\Http\Response
      */
-    public function edit(ProductVariation $product_variation)
+    public function edit(ProductVariation $product_Variation)
     {
         //
     }
@@ -65,10 +65,10 @@ class ProductVariationController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdateProductVariationRequest  $request
-     * @param  \App\Models\ProductVariation  $product_variation
+     * @param  \App\Models\ProductVariation  $product_Variation
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateProductVariationRequest $request, ProductVariation $product_variation)
+    public function update(UpdateProductVariationRequest $request, ProductVariation $product_Variation)
     {
         //
     }
@@ -76,10 +76,10 @@ class ProductVariationController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ProductVariation  $product_variation
+     * @param  \App\Models\ProductVariation  $product_Variation
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProductVariation $product_variation)
+    public function destroy(ProductVariation $product_Variation)
     {
         //
     }

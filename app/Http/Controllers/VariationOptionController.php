@@ -42,10 +42,10 @@ class VariationOptionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\VariationOption  $variation_option
+     * @param  \App\Models\VariationOption  $variation_Option
      * @return \Illuminate\Http\Response
      */
-    public function show(VariationOption $variation_option)
+    public function show(VariationOption $variation_Option)
     {
         //
     }
@@ -53,10 +53,10 @@ class VariationOptionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\VariationOption  $variation_option
+     * @param  \App\Models\VariationOption  $variation_Option
      * @return \Illuminate\Http\Response
      */
-    public function edit(VariationOption $variation_option)
+    public function edit(VariationOption $variation_Option)
     {
         //
     }
@@ -65,10 +65,10 @@ class VariationOptionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdateVariationOptionRequest  $request
-     * @param  \App\Models\VariationOption  $variation_option
+     * @param  \App\Models\VariationOption  $variation_Option
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateVariationOptionRequest $request, VariationOption $variation_option)
+    public function update(UpdateVariationOptionRequest $request, VariationOption $variation_Option)
     {
         //
     }
@@ -76,10 +76,10 @@ class VariationOptionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\VariationOption  $variation_option
+     * @param  \App\Models\VariationOption  $variation_Option
      * @return \Illuminate\Http\Response
      */
-    public function destroy(VariationOption $variation_option)
+    public function destroy(VariationOption $variation_Option)
     {
         //
     }

@@ -42,10 +42,10 @@ class ShippingMethodController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ShippingMethod  $shipping_method
+     * @param  \App\Models\ShippingMethod  $shippingMethod
      * @return \Illuminate\Http\Response
      */
-    public function show(ShippingMethod $shipping_method)
+    public function show(ShippingMethod $shippingMethod)
     {
         //
     }
@@ -53,10 +53,10 @@ class ShippingMethodController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ShippingMethod  $shipping_method
+     * @param  \App\Models\ShippingMethod  $shippingMethod
      * @return \Illuminate\Http\Response
      */
-    public function edit(ShippingMethod $shipping_method)
+    public function edit(ShippingMethod $shippingMethod)
     {
         //
     }
@@ -65,10 +65,10 @@ class ShippingMethodController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdateShippingMethodRequest  $request
-     * @param  \App\Models\ShippingMethod  $shipping_method
+     * @param  \App\Models\ShippingMethod  $shippingMethod
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateShippingMethodRequest $request, ShippingMethod $shipping_method)
+    public function update(UpdateShippingMethodRequest $request, ShippingMethod $shippingMethod)
     {
         //
     }
@@ -76,10 +76,10 @@ class ShippingMethodController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ShippingMethod  $shipping_method
+     * @param  \App\Models\ShippingMethod  $shippingMethod
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ShippingMethod $shipping_method)
+    public function destroy(ShippingMethod $shippingMethod)
     {
         //
     }

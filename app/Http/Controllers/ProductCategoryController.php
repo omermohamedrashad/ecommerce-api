@@ -42,10 +42,10 @@ class ProductCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ProductCategory  $product_category
+     * @param  \App\Models\ProductCategory  $product_Category
      * @return \Illuminate\Http\Response
      */
-    public function show(ProductCategory $product_category)
+    public function show(ProductCategory $product_Category)
     {
         //
     }
@@ -53,10 +53,10 @@ class ProductCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ProductCategory  $product_category
+     * @param  \App\Models\ProductCategory  $product_Category
      * @return \Illuminate\Http\Response
      */
-    public function edit(ProductCategory $product_category)
+    public function edit(ProductCategory $product_Category)
     {
         //
     }
@@ -65,10 +65,10 @@ class ProductCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdateProductCategoryRequest  $request
-     * @param  \App\Models\ProductCategory  $product_category
+     * @param  \App\Models\ProductCategory  $product_Category
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateProductCategoryRequest $request, ProductCategory $product_category)
+    public function update(UpdateProductCategoryRequest $request, ProductCategory $product_Category)
     {
         //
     }
@@ -76,10 +76,10 @@ class ProductCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ProductCategory  $product_category
+     * @param  \App\Models\ProductCategory  $product_Category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProductCategory $product_category)
+    public function destroy(ProductCategory $product_Category)
     {
         //
     }

@@ -42,10 +42,10 @@ class PromotionCodeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\PromotionCode  $promotion_code
+     * @param  \App\Models\PromotionCode  $promotion_Code
      * @return \Illuminate\Http\Response
      */
-    public function show(PromotionCode $promotion_code)
+    public function show(PromotionCode $promotion_Code)
     {
         //
     }
@@ -53,10 +53,10 @@ class PromotionCodeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\PromotionCode  $promotion_code
+     * @param  \App\Models\PromotionCode  $promotion_Code
      * @return \Illuminate\Http\Response
      */
-    public function edit(PromotionCode $promotion_code)
+    public function edit(PromotionCode $promotion_Code)
     {
         //
     }
@@ -65,10 +65,10 @@ class PromotionCodeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \App\Http\Requests\UpdatePromotionCodeRequest  $request
-     * @param  \App\Models\PromotionCode  $promotion_code
+     * @param  \App\Models\PromotionCode  $promotion_Code
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatePromotionCodeRequest $request, PromotionCode $promotion_code)
+    public function update(UpdatePromotionCodeRequest $request, PromotionCode $promotion_Code)
     {
         //
     }
@@ -76,10 +76,10 @@ class PromotionCodeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\PromotionCode  $promotion_code
+     * @param  \App\Models\PromotionCode  $promotion_Code
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PromotionCode $promotion_code)
+    public function destroy(PromotionCode $promotion_Code)
     {
         //
     }

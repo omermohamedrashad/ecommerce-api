@@ -21,7 +21,6 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'user_type_id',
     ];
 
     /**
@@ -44,33 +43,11 @@ class User extends Authenticatable
     ];
 
 
-    public function carts(){
-        return $this->hasMany(Cart::class);
+    public function addresses(){
+        return $this->belongsToMany(Address::class,'user_addresses');
     }
 
-    public function orders(){
-        return $this->hasMany(Order::class);
+    public function products(){
+        return $this->belongsToMany(Product::class,'product_owners');
     }
-
-    public function payment_methods(){
-        return $this->hasMany(PaymentMethod::class);
-    }
-
-    public function user_types(){
-        $this->belongsTo(UserType::class);
-    }
-
-    public function user_addresses(){
-        return $this->hasMany(UserAddress::class);
-    }
-
-    public function user_reviews(){
-        return $this->hasMany(UserReview::class);
-    }
-
-    public function products()
-    {
-        return $this->belongsToMany(Product::class);
-    }
-
 }

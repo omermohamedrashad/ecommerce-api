@@ -13,7 +13,7 @@ class StoreCountryRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,13 @@ class StoreCountryRequest extends FormRequest
     public function rules()
     {
         return [
-            //
-        ];
+                'countryName' => ['required'],
+            ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'country_name' => $this->countryName,
+        ]);
     }
 }
