@@ -2,8 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use \App\Http\Controllers\AddressController;
-
+use App\Http\Controllers;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,9 +18,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::group(['prefix' => 'v1' , 'namespace' => 'App\Http\Controllers', 'middleware' => 'auth:sanctum'], function(){
-    Route::apiResource('address', '\App\Http\Controllers\AddressController');
-//    Route::apiResource('invoices', InvoiceController::class);
-//    Route::post('invoices/bulk',['uses' => 'InvoiceController@bulkStore']);
-});
 
+Route::apiResource('address', App\Http\Controllers\AddressController::class);
+Route::apiResource('country', 'App\Http\Controllers\CountryController');
+Route::apiResource('user', 'App\Http\Controllers\UserController');

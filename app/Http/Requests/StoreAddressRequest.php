@@ -30,18 +30,18 @@ class StoreAddressRequest extends FormRequest
             'addressLine2' => ['required'],
             'city' => ['required'],
             'region' => ['required'],
-            'countryId' => ['required'],
+            'countryName' => ['required'],
             'postalCode' => ['required'],
         ];
     }
 
     protected function prepareForValidation(){
         $this->merge([
+            'country_id' => $this->countryName,
             'block_number'  => $this->blockNumber,
             'street_number'  => $this->streetNumber,
             'address_line_1'  => $this->addressLine1,
             'address_line_2'  => $this->addressLine2,
-            'counter_id'    => $this->countryId,
             'postal_code'   => $this->postalCode,
         ]);
     }

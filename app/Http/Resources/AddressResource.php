@@ -23,9 +23,9 @@ class AddressResource extends JsonResource
             'addressLine2' => $this->address_line_2,
             'city' => $this->city,
             'region' => $this->region,
-            'countryName' => Country::select('*')->where('id','=', $this->country_id)->first()->value('country_name'),
+            'countryName' => CountryResource::collection([$this->countries])->value('country_name'),
             'postalCode' => $this->postal_code,
         ];
-
     }
+//CountryResource::collection($this->whenLoaded('countries' || 'addresses'))->value('country_name'),
 }

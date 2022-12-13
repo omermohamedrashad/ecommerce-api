@@ -6,7 +6,9 @@ use App\Http\Requests\StoreAddressRequest;
 use App\Http\Requests\UpdateAddressRequest;
 use App\Http\Resources\AddressCollection;
 use App\Http\Resources\AddressResource;
+use App\Http\Resources\CountryResource;
 use App\Models\Address;
+use App\Models\Country;
 use Illuminate\Http\Request;
 
 class AddressController extends Controller
@@ -18,7 +20,7 @@ class AddressController extends Controller
      */
     public function index()
     {
-        return new AddressCollection(Address::with('countries')->get());
+        return new AddressCollection(Address::with('countries')->paginate());
     }
 
     /**
@@ -35,22 +37,22 @@ class AddressController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \App\Http\Requests\StoreAddressRequest  $request
-     * @return \Illuminate\Http\Response
+     * @return AddressResource|\Illuminate\Http\Response
      */
     public function store(StoreAddressRequest $request)
     {
-        //
+        return new AddressResource(Address::create($request->all()));
     }
 
     /**
      * Display the specified resource.
      *
      * @param  \App\Models\Address  $address
-     * @return \Illuminate\Http\Response
+     * @return AddressResource|\Illuminate\Http\Response
      */
     public function show(Address $address)
     {
-        return new AddressResource($address);
+        return new AddressResource($address->loadMissing('countries'));
     }
 
     /**

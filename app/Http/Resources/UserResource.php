@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Address;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class UserResource extends JsonResource
@@ -19,11 +20,12 @@ class UserResource extends JsonResource
             'name' => $this->name,
             'email' => $this->email,
             'phone_number' => $this->phone_number,
-            'user_type_id' => $this->user_type_id,
-            'user_image' => $this->user_image,
-            'email_verified_at' => $this->email_verified_at,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
+//            'user_type_id' => $this->user_type_id,
+//            'user_image' => $this->user_image,
+//            'email_verified_at' => $this->email_verified_at,
+            'address' => AddressResource::collection($this->whenLoaded('addresses')),
+//            'created_at' => $this->created_at,
+//            'updated_at' => $this->updated_at,
         ];
     }
 }

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreCountryRequest;
 use App\Http\Requests\UpdateCountryRequest;
+use App\Http\Resources\CountryCollection;
+use App\Http\Resources\CountryResource;
 use App\Models\Country;
 
 class CountryController extends Controller
@@ -11,11 +13,12 @@ class CountryController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return CountryCollection|\Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        return new CountryCollection(Country::all());
+
     }
 
     /**
@@ -32,22 +35,22 @@ class CountryController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \App\Http\Requests\StoreCountryRequest  $request
-     * @return \Illuminate\Http\Response
+     * @return CountryResource|\Illuminate\Http\Response
      */
     public function store(StoreCountryRequest $request)
     {
-        //
+        return new CountryResource(Country::create($request->all()));
     }
 
     /**
      * Display the specified resource.
      *
      * @param  \App\Models\Country  $country
-     * @return \Illuminate\Http\Response
+     * @return CountryResource|\Illuminate\Http\Response
      */
     public function show(Country $country)
     {
-        //
+        return new CountryResource($country);
     }
 
     /**
