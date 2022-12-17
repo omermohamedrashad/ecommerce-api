@@ -13,7 +13,7 @@ class StoreProductOwnerRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,15 @@ class StoreProductOwnerRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'userId'    => ['required'],
+            'productId' => ['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'user_id'       => $this->userId,
+            'product_id'    => $this->productId,
+        ]);
     }
 }

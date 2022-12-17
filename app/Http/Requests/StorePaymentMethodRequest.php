@@ -13,7 +13,7 @@ class StorePaymentMethodRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,23 @@ class StorePaymentMethodRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'userId'         => ['required'],
+            'paymentTypeId'  => ['required'],
+            'providerId'     => ['required'],
+            'accountNumber'  => ['required'],
+            'expireDate'     => ['required'],
+            'isDefault'      => ['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'user_id'           => $this->userId,
+            'payment_type_id'   => $this->paymentTypeId,
+            'provider_id'       => $this->providerId,
+            'accountNumber'     => $this->accountNumber,
+            'expire_date'       => $this->expireDate,
+            'is_default'        => $this->isDefault,
+        ]);
     }
 }

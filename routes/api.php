@@ -18,7 +18,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::group(['prefix' => 'ec' , 'namespace' => 'App\Http\Controllers'], function(){
+    Route::apiResource('user', App\Http\Controllers\UserController::class);
+    Route::apiResource('products', Controllers\ProductCodeController::class);
+    Route::apiResource('addresses', Controllers\AddressController::class);
+});
 
 Route::apiResource('address', App\Http\Controllers\AddressController::class);
 Route::apiResource('country', 'App\Http\Controllers\CountryController');
-Route::apiResource('user', 'App\Http\Controllers\UserController');

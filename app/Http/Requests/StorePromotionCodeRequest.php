@@ -13,7 +13,7 @@ class StorePromotionCodeRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,14 @@ class StorePromotionCodeRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'promotionId' => ['required'],
+            'code' => ['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'promotion_id' => $this->promotionId,
+        ]);
     }
 }

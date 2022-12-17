@@ -13,7 +13,7 @@ class StoreCartRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,13 @@ class StoreCartRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'userId' => ['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'user_id' => $this->userId,
+        ]);
     }
 }

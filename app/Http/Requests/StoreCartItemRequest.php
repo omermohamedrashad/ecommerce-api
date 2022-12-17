@@ -13,7 +13,7 @@ class StoreCartItemRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,16 @@ class StoreCartItemRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'cartId'        => ['required'],
+            'productItemId' => ['required'],
+            'quantity'      => ['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'cart_id'           => $this->cartId,
+            'product_item_id'   => $this->productItemId,
+        ]);
     }
 }

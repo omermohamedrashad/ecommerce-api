@@ -13,7 +13,7 @@ class StorePromotionRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,19 @@ class StorePromotionRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name'          => ['required'],
+            'description'   => ['required'],
+            'discountRate'  => ['required'],
+            'startDate'     => ['required'],
+            'endDate'       => ['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'discount_rate' => $this->discountRate,
+            'start_date'    => $this->startDate,
+            'end_date'      => $this->endDate,
+        ]);
     }
 }

@@ -13,7 +13,7 @@ class StoreProductCategoryRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,14 @@ class StoreProductCategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'parentCategoryId'  => ['sometimes'],
+            'name'              => ['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'parent_category_id'   => $this->parentCategoryId,
+        ]);
     }
 }

@@ -13,7 +13,7 @@ class StoreOrderStatusRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,14 @@ class StoreOrderStatusRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'orderStatus' => ['required'],
         ];
     }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'order_status' => $this->orderStatus,
+        ]);
+    }
+
 }

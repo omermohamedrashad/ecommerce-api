@@ -13,7 +13,7 @@ class StoreProductFillterRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,15 @@ class StoreProductFillterRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'productItemId'     => ['required'],
+            'variationOptionId' => ['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'product_item_id'       => $this->productItemId,
+            'variation_option_id'   => $this->variationOptionId,
+        ]);
     }
 }

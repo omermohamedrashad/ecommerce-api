@@ -13,7 +13,7 @@ class StorePromotionCategoryRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,15 @@ class StorePromotionCategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'productCategoryId' =>['required'],
+            'promotionId'       =>['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'product_category_id' => $this->productCategoryId,
+            'promotion_id'        => $this->promotionId,
+        ]);
     }
 }

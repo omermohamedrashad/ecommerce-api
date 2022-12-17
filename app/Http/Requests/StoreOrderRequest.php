@@ -13,7 +13,7 @@ class StoreOrderRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,25 @@ class StoreOrderRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'userId'            => ['required'],
+            'paymentMethodId'   => ['required'],
+            'userAddressId'     => ['required'],
+            'shippingMethodId'  => ['required'],
+            'orderStatusId'     => ['required'],
+            'orderDate'         => ['required'],
+            'orderTotal'        => ['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'user_id'               => $this->userId,
+            'payment_method_id'     => $this->paymentMethodId,
+            'user_address_id'       => $this->userAddressId,
+            'shipping_method_id'    => $this->shippingMethodId,
+            'order_status_id'       => $this->orderStatusId,
+            'order_date'            => $this->orderDate,
+            'order_total'           => $this->orderTotal,
+        ]);
     }
 }

@@ -13,7 +13,7 @@ class StoreUserReviewRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,20 @@ class StoreUserReviewRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'userId'        => ['required'],
+            'orderLineId'   => ['required'],
+            'ratingValue'   => ['required'],
+            'comment'       => ['required'],
+            'isHelpful'     => ['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'user_id'       => $this->userId,
+            'order_line_id' => $this->orderLineId,
+            'rating_value'  => $this->ratingValue,
+            'is_helpful'    => $this->isHelpful,
+        ]);
     }
 }

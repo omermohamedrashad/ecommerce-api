@@ -13,7 +13,7 @@ class StoreVariationOptionRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,14 @@ class StoreVariationOptionRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'productVariationId'    => ['required'],
+            'value'                 => ['required'],
         ];
+    }
+
+    protected function prepareForValidation(){
+        $this->merge([
+            'product_variation_id' => $this->producVariationId,
+        ]);
     }
 }

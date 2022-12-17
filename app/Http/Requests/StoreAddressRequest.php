@@ -24,25 +24,25 @@ class StoreAddressRequest extends FormRequest
     public function rules()
     {
         return [
-            'blockNumber' =>['required'],
-            'streetNumber' => ['required'],
-            'addressLine1' => ['required'],
-            'addressLine2' => ['required'],
-            'city' => ['required'],
-            'region' => ['required'],
-            'countryName' => ['required'],
-            'postalCode' => ['required'],
+            'blockNumber'   =>['required'],
+            'streetNumber'  => ['required'],
+            'addressLine1'  => ['required'],
+            'addressLine2'  => ['required'],
+            'city'          => ['required'],
+            'region'        => ['required'],
+            'countryName'   => ['required'],
+            'postalCode'    => ['required'],
         ];
     }
 
     protected function prepareForValidation(){
         $this->merge([
-            'country_id' => $this->countryName,
-            'block_number'  => $this->blockNumber,
-            'street_number'  => $this->streetNumber,
-            'address_line_1'  => $this->addressLine1,
-            'address_line_2'  => $this->addressLine2,
-            'postal_code'   => $this->postalCode,
+            'country_id'        => $this->countryName,
+            'block_number'      => $this->blockNumber,
+            'street_number'     => $this->streetNumber,
+            'address_line_1'    => $this->addressLine1,
+            'address_line_2'    => $this->addressLine2,
+            'postal_code'       => $this->postalCode,
         ]);
     }
 }
