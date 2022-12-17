@@ -14,6 +14,10 @@ class PromotionCategoryResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'                => $this->id,
+            'productCategoryId' => ProductCategoryResource::collection([$this->product_category_id])->value('category_name'),
+            'promotionId'       => PromotionResource::collection([$this->promotion_id])->value('discount_rate'),
+        ];
     }
 }

@@ -16,16 +16,15 @@ class AddressResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id' => $this->id,
-            'blockNumber' => $this->block_number,
-            'streetNumber' => $this->street_number,
-            'addressLine1' => $this->address_line_1,
-            'addressLine2' => $this->address_line_2,
-            'city' => $this->city,
-            'region' => $this->region,
-            'countryName' => CountryResource::collection([$this->countries])->value('country_name'),
-            'postalCode' => $this->postal_code,
+            'id'            => $this->id,
+            'blockNumber'   => $this->block_number,
+            'streetNumber'  => $this->street_number,
+            'addressLine1'  => $this->address_line_1,
+            'addressLine2'  => $this->address_line_2,
+            'city'          => $this->city,
+            'region'        => $this->region,
+            'countryName'   => CountryResource::collection([$this->countries])->value('country_name'),
+            'postalCode'    => $this->postal_code,
         ];
     }
-//CountryResource::collection($this->whenLoaded('countries' || 'addresses'))->value('country_name'),
 }

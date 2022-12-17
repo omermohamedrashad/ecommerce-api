@@ -14,6 +14,13 @@ class UserReviewResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'           => $this->id,
+            'userId'       => $this->user_id,
+            'orderLineId'  => OrderLineResource::collection([$this->order_line_id]),
+            'ratingValue'  => $this->rating_value,
+            'comment'      => $this->comment,
+            'isHelpful'    => $this->is_helpful,
+        ];
     }
 }

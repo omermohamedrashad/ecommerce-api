@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Http\Controllers\ProductVariationController;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class VariationOptionResource extends JsonResource
@@ -14,6 +15,10 @@ class VariationOptionResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'                    => $this->id,
+            'productVariationId'    => ProductVariationResource::collection([$this->product_variation_id])->value('name'),
+            'value'                 => $this->value,
+        ];
     }
 }

@@ -17,16 +17,16 @@ class UserResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id' => $this->id,
-            'name' => $this->name,
-            'email' => $this->email,
-            'phone_number' => $this->phone_number,
-            'user_type' => UserTypeResource::collection([$this->user_types])->value('type'),
-//            'user_image' => $this->user_image,
+            'id'                => $this->id,
+            'name'              => $this->name,
+            'email'             => $this->email,
+            'phone_number'      => $this->phone_number,
+            'user_type'         => UserTypeResource::collection([$this->user_types])->value('type'),
+//            'user_image'        => $this->user_image,
 //            'email_verified_at' => $this->email_verified_at,
-            'address' => AddressResource::collection($this->whenLoaded('addresses')),
-//            'created_at' => $this->created_at,
-//            'updated_at' => $this->updated_at,
+            'address'           => AddressResource::collection($this->whenLoaded('addresses')),
+//            'created_at'        => $this->created_at,
+//            'updated_at'        => $this->updated_at,
         ];
     }
 }

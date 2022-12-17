@@ -14,6 +14,10 @@ class ProductVariationResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'                => $this->id,
+            'productCategoryId' => ProductCategoryResource::collection([$this->product_category_id])->value('category_name'),
+            'name'              => $this->name,
+        ];
     }
 }

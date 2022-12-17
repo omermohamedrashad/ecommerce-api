@@ -14,6 +14,10 @@ class PromotionCodeResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'            => $this->id,
+            'promotionId'   => PromotionResource::collection([$this->promotion_id])->value('discount_rate'),
+            'code'          => $this->code,
+        ];
     }
 }

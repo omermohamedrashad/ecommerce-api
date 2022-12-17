@@ -14,6 +14,10 @@ class ProductOwnerResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'        => $this->id,
+            'productId' => ProductResource::collection([$this->product_id])->value('name'),
+            'userId'    => UserResource::collection([$this->user_id])->value('name'),
+        ];
     }
 }

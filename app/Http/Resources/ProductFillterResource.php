@@ -14,6 +14,10 @@ class ProductFillterResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'                => $this->id,
+            'productItemId'     => ProductItemResource::collection([$this->product_item_id]),
+            'variationOptionId' => VariationOptionResource::collection([$this->variation_option_id])->value('value'),
+        ];
     }
 }

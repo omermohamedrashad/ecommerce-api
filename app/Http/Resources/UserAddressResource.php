@@ -15,8 +15,8 @@ class UserAddressResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'user_id' => $this->userId,
-            'address_id' => $this->addressId,
+            'user_id'       => UserResource::collection([$this->userId])->value('name0'),
+            'address_id'    => AddressResource::collection([$this->addressId]),
         ];
     }
 }
